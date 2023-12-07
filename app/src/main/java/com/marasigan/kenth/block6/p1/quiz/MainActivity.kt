@@ -21,19 +21,30 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun div() {
-        TODO("Not yet implemented")
+        val num1 = binding.etFirst.text.toString().toInt()
+        val num2 = binding.etSecond.text.toString().toInt()
+        val result = num1 / num2
+
+        binding.tvAnswer.text = result.toString()
     }
 
     private fun mul() {
-        TODO("Not yet implemented")
+        val num1 = binding.etFirst.text.toString().toInt()
+        val num2 = binding.etSecond.text.toString().toInt()
+        val result = num1 * num2
+
+        binding.tvAnswer.text = result.toString()
     }
 
     private fun sub() {
-        TODO("Not yet implemented")
+        val num1 = binding.etFirst.text.toString().toInt()
+        val num2 = binding.etSecond.text.toString().toInt()
+        val result = num1 - num2
+
+        binding.tvAnswer.text = result.toString()
     }
 
     private fun add() {
-        Toast.makeText(this, "add", Toast.LENGTH_SHORT).show()
         val num1 = binding.etFirst.text.toString().toInt()
         val num2 = binding.etSecond.text.toString().toInt()
         val result = num1 + num2
