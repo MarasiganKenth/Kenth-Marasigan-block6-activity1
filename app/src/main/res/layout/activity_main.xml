@@ -11,10 +11,10 @@
         android:id="@+id/et_first"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="172dp"
         android:hint="Enter Number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_calculator"
         tools:ignore="HardcodedText" />
@@ -37,10 +37,81 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Calculator"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="answer"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calculator"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_subtract"
+        app:layout_constraintEnd_toStartOf="@+id/btn_subtract"
+        app:layout_constraintTop_toTopOf="@+id/btn_subtract"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_second" />
+
+    <Button
+        android:id="@+id/btn_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="x"
+        app:layout_constraintEnd_toEndOf="@+id/btn_add"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_add"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="%"
+        app:layout_constraintEnd_toEndOf="@+id/btn_subtract"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_multiply"
+        app:layout_constraintTop_toBottomOf="@+id/btn_subtract" />
+
+    <Button
+        android:id="@+id/btn_equal"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="56dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_second"
+        app:layout_constraintTop_toBottomOf="@+id/et_second"
+        app:layout_constraintVertical_bias="0.138" />
 </androidx.constraintlayout.widget.ConstraintLayout>
